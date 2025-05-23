@@ -57,12 +57,22 @@ tariq-ai/
 ├── prayer_manager.py     # Prayer time handler
 ├── video_engine.py       # Framebuffer video playback
 ├── language_switcher.py  # Toggle AR/EN
-├── assets/
-│   ├── sounds/
-│   ├── video/
-│   ├── faces/
-│   └── launcher/run_tariq.sh
-└── ...
+
+ assets/
+├── images/
+│   ├── screenshots/
+│   └── ...
+├── sounds/
+├── video/
+├── quran/
+├── music/
+├── faces/
+├── icons/
+├── jokes/
+├── stories/
+├── hadiths/
+└── launcher/
+
 ```
 
 ## 🧑‍💻 How to Use
@@ -82,6 +92,18 @@ Speak the wake word "طارق" or "Tariq" (depending on current language). Once 
 Tariq will respond with audio and show matching video.
 
 ## 🌍 Language Toggle
+## 📸 Screenshots
+
+| Startup & Interface | Voice Commands | Kids & Language |
+|---------------------|----------------|-----------------|
+| ![Splash Start](assets/images/screenshots/splash_video_start.png) | ![Time Query](assets/images/screenshots/command_time.png) | ![Kids Mode](assets/images/screenshots/kids_interface.png) |
+| ![Tariq Icon](assets/images/screenshots/tariq_desktop_icon.png) | ![Prayer Time](assets/images/screenshots/command_prayer_time.png) | ![Arabic → EN](assets/images/screenshots/language_toggle_en.png) |
+| ![Wake Confirmed](assets/images/screenshots/wake_confirmation.png) | ![Quran Mode](assets/images/screenshots/command_quran_mode.png) | ![EN → Arabic](assets/images/screenshots/language_toggle_ar.png) |
+| ![Error Fallback](assets/images/screenshots/error_fallback.png) | ![Joke in Arabic](assets/images/screenshots/command_joke_ar.png) | ![Hadith](assets/images/screenshots/command_hadith.png) |
+| ![Requirements](assets/images/screenshots/requirements_list.png) | ![Story (AR)](assets/images/screenshots/command_story_ar.png) | ![Story (EN)](assets/images/screenshots/command_story_en.png) |
+
+> All commands were spoken using the offline STT engine. Reactions are fully local with synchronized video.
+
 
 Say "language" or "لغة" to switch between Arabic and English.
 
