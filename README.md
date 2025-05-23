@@ -1,10 +1,9 @@
-# tariq-ai
-🌙 Offline smart assistant for Raspberry Pi | Arabic &amp; English | Quran • Adhan • Stories • No Cloud Required
-# GitHub Release Prep — Tariq AI
+# Tariq AI ✨ 🌙 طارق  
+An Offline smart assistant for Raspberry Pi | Arabic &amp; English | Quran • Adhan • Stories • No Cloud Required
 
 ## 🧠 Overview
 
-Tariq AI is an offline, voice-driven smart assistant for Raspberry Pi. It supports Arabic and English, reacts with animated videos, plays Quran and Adhan, tells jokes and stories, and helps educate children and families with culturally aware content. Designed as a phone-free AI companion.
+Tariq AI is an offline, culturally-aware voice assistant for Raspberry Pi devices. Designed to be educational, fun, and private — especially for kids and family-friendly environments — Tariq speaks Arabic and English, reacts with videos, recites Quran, plays Adhan, shares stories, jokes, and hadiths, and supports touch-screen interaction without requiring a phone or internet. Designed as a phone-free AI companion.
 
 ## 📦 Features
 
@@ -49,29 +48,23 @@ chmod +x assets/launcher/run_tariq.sh
 
 ```
 tariq-ai/
-├── main.py                # Main entry point
-├── command_matcher.py    # Command routing engine
-├── audio_input.py        # Audio recorder
-├── tts_manager.py        # Text-to-speech
-├── quran_player.py       # Quran playback
-├── prayer_manager.py     # Prayer time handler
-├── video_engine.py       # Framebuffer video playback
-├── language_switcher.py  # Toggle AR/EN
-
- assets/
-├── images/
-│   ├── screenshots/
-│   └── ...
-├── sounds/
-├── video/
-├── quran/
-├── music/
-├── faces/
-├── icons/
-├── jokes/
-├── stories/
-├── hadiths/
-└── launcher/
+├── main.py
+├── command_matcher.py
+├── tts_manager.py
+├── wake_word_detector.py
+├── quran_player.py
+├── prayer_manager.py
+├── language_switcher.py
+├── video_engine.py
+├── assets/
+│   ├── launcher/run_tariq.sh
+│   ├── video/*.mp4
+│   ├── sounds/*.wav, *.mp3
+│   ├── images/*.png
+│   ├── faces/*.png
+│   ├── jokes/jokes_ar.txt, jokes_en.txt
+│   ├── stories/stories_ar.txt, stories_en.txt
+│   ├── hadiths/hadiths_ar.txt, hadiths_en.txt
 
 ```
 
@@ -103,9 +96,11 @@ Tariq will respond with audio and show matching video.
 | ![Requirements](assets/images/screenshots/requirements_list.png) | ![Story (AR)](assets/images/screenshots/command_story_ar.png) | ![Story (EN)](assets/images/screenshots/command_story_en.png) |
 
 > All commands were spoken using the offline STT engine. Reactions are fully local with synchronized video.
+Say:
 
+"language" / "english" / "لغة" / "عربي"
 
-Say "language" or "لغة" to switch between Arabic and English.
+Tariq will toggle between Arabic and English.
 
 ## ✨ Contributing
 
@@ -118,5 +113,5 @@ MIT License — free to use and share with attribution.
 
 ---
 
-> This project was developed with love and guidance by ChatGPT + Tariq's creator.
-> Join the mission to reshape smart companions for real-world culture and values.
+Developed with guidance from ChatGPT and love from the creator.
+Help us build meaningful smart assistants rooted in culture, language, and human values.
