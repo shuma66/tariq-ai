@@ -28,7 +28,7 @@ Tariq AI is an offline, culturally-aware voice assistant for Raspberry Pi device
 ## ⚙️ Configuration – Set Your Location
 Tariq AI uses your **geographic coordinates** to calculate accurate prayer times and Adhan schedules.
 
-To **set your location**, open the file:
+#To **set your location**, open the file:
 prayer_times.py
 # === CONFIGURATION ===
 LOCATION = {
@@ -36,16 +36,16 @@ LOCATION = {
     "longitude": 31.630556,
     "timezone": 3            # UTC+3
 }
-🔁 Change these values to match your city.
+##🔁 Change these values to match your city.
 You can find your coordinates at latlong.net or via Google Maps.
 
-📍 Example: Jakarta, Indonesia
+#📍 Example: Jakarta, Indonesia
 LOCATION = {
     "latitude": -6.2088,
     "longitude": 106.8456,
     "timezone": 7  # UTC+7
 }
-⚠️ Note: Make sure to restart the assistant after updating your location.
+##⚠️ Note: Make sure to restart the assistant after updating your location.
 
 ## 🚀 Installation
 
