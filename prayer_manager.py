@@ -7,8 +7,8 @@ from prayer_times_calculator import PrayerTimesCalculator
 
 # === CONFIGURATION ===
 LOCATION = {
-    "latitude": 30.01541,
-    "longitude": 31.41887,
+    "latitude": 30.091667,
+    "longitude": 31.630556,
     "timezone": 3  # Cairo timezone UTC+3
 }
 
